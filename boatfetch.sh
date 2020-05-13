@@ -1,8 +1,12 @@
 #!/bin/bash
-#@Thempler1
+# @Thempler1
 clear
 
-#Variables
+# Settings
+#ANIMATION=0: NO ANIMATION, ANIMATION=1: BOAT ANIMATION
+ANIMATION=1
+
+# Variables
 MYSHELL=$($SHELL --version | cut -d '(' -f 1)
 UPTIME=$(uptime -p)
 UPTIME=${UPTIME#*up }
