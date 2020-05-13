@@ -14,3 +14,64 @@ DESCRIPTION=$(lsb_release -d)
 DESCRIPTION=${DESCRIPTION#*[[:space:]]}
 MEMTOTAL=`free -m  | grep Mem | awk '{print $2}'`
 MEMUSED=`free -m  | grep Mem | awk '{print $3}'`
+
+# Output
+if [ $ANIMATION -eq 0 ]
+then
+    echo ""
+    echo "              ............              "
+    echo "           ..................           Welcome aboard,  $(whoami)!"
+    echo "         ......................         "
+    echo "        ........................        "
+    echo "      ....... | .. | .. | ........      OS: $DESCRIPTION"
+    echo "     ....... )_)  )_)  )_) ........     Default Shell: $MYSHELL"
+    echo "     ...... )___))___))___)\ ......     Uptime: $UPTIME"
+    echo "     ..... )____)____)_____)\ .....     RAM: $MEMUSED MiB / $MEMTOTAL MiB"
+    echo "      .. _____|____|____|____\__ .      "
+    echo "---------\  o - o - o - o    /--------- Wherever we want to go, we will go."
+    echo "  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^           "
+    echo "    ^^^^      ^^^^     ^^^    ^^        "
+    echo "         ^^^^      ^^^                  "
+elif [ $ANIMATION -eq 1 ]
+then
+    for i in 1 2 3
+    do
+        clear
+        echo ""
+        echo "              ............              "
+        echo "           ..................           Welcome aboard,  $(whoami)!"
+        echo "         ......................         "
+        echo "        ........................        "
+        echo "      ....... | .. | .. | ........      OS: $DESCRIPTION"
+        echo "     ....... )_)  )_)  )_) ........     Default Shell: $MYSHELL"
+        echo "     ...... )___))___))___)\ ......     Uptime: $UPTIME"
+        echo "     ..... )____)____)_____)\ .....     RAM: $MEMUSED MiB / $MEMTOTAL MiB"
+        echo "      .. _____|____|____|____\__ .      "
+        echo " --------\  o - o - o - o    /--------- Wherever we want to go, we will go."
+        echo "  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^    ^^     "
+        echo "    ^^^^      ^^^^     ^^^    ^^        "
+        echo "         ^^^^      ^^^                  "
+        echo ""
+        sleep 0.2
+        clear
+        echo ""
+        echo "              ............              "
+        echo "           ..................           Welcome aboard,  $(whoami)!"
+        echo "         ......................         "
+        echo "        ........................        "
+        echo "      ....... | .. | .. | ........      OS: $DESCRIPTION"
+        echo "     ....... )_)  )_)  )_) ........     Default Shell: $MYSHELL"
+        echo "     ...... )___))___))___)\ ......     Uptime: $UPTIME"
+        echo "     ..... )____)____)_____)\ .....     RAM: $MEMUSED MiB / $MEMTOTAL MiB"
+        echo "      .. _____|____|____|____\__ .      "
+        echo " --------\  o - o - o - o    /--------- Wherever we want to go, we will go."
+        echo "  ^ ^^^^^^^^^^^^^^^^^^^^^^^^^           "
+        echo "    ^  ^^^^^^  ^^^    ^^^^    ^^        "
+        echo "     ^^      ^^^  ^^^^     ^^^          "
+        echo ""
+        sleep 0.2
+    done
+else
+    echo "ARRRGG! Bad Configuration, squid head!"
+    echo "The ship will not sail"
+fi
