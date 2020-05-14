@@ -3,6 +3,8 @@
 ## Proposito
 Piratefetch, al más puro estilo de Linux, busca mostrar amigablemente información del sistema por medio de la terminal, tal como lo hacen Screenfetch o Neofetch, pero con un enfoque minimalista.
 
+![IMG](https://ibb.co/tYjLtmK)
+
 ## Funciones
 Mostrar datos del Sistema Operativo, tales como:
 * SO
