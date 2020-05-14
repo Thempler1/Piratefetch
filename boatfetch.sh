@@ -39,7 +39,7 @@ then
         clear
         echo ""
         echo "              ............                "
-        echo "           ..................             Welcome aboard,  $(whoami)!"
+        echo "           ..................             Welcome aboard, $(whoami)!"
         echo "         ......................           "
         echo "        ........................          "
         echo "      ....... | .. | .. | ........        OS: $DESCRIPTION"
@@ -48,15 +48,15 @@ then
         echo "     ..... )____)____)_____)\ .....       RAM: $MEMUSED MiB / $MEMTOTAL MiB"
         echo "      .. _____|____|____|____\__ .        "
         echo " --------\  o - o - o - o    /---------   Wherever we want to go, we will go."
-        echo "  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^    ^^       "
+        echo "  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^             "
         echo "    ^^^^      ^^^^     ^^^    ^^          "
         echo "         ^^^^      ^^^                    "
         echo ""
-        sleep 0.2
+        sleep 0.18
         clear
         echo ""
         echo "              ............                "
-        echo "           ..................             Welcome aboard,  $(whoami)!"
+        echo "           ..................             Welcome aboard, $(whoami)!"
         echo "         ......................           "
         echo "        ........................          "
         echo "      ....... | .. | .. | ........        OS: $DESCRIPTION"
@@ -65,11 +65,28 @@ then
         echo "     ..... )____)____)_____)\ .....       RAM: $MEMUSED MiB / $MEMTOTAL MiB"
         echo "      .. _____|____|____|____\__ .        "
         echo " --------\  o - o - o - o    /---------   Wherever we want to go, we will go."
-        echo "  ^ ^^^^^^^^^^^^^^^^^^^^^^^^^             "
-        echo "    ^  ^^^^^^  ^^^    ^^^^    ^^          "
-        echo "     ^^      ^^^  ^^^^     ^^^            "
+        echo " ^^^^^ ^^^^^^^^^^^^^^^^^^^^^^            "
+        echo "   ^^^^      ^^^^     ^^^    ^^          "
+        echo "        ^^^^      ^^^                    "
         echo ""
-        sleep 0.2
+        sleep 0.18
+        clear
+        echo ""
+        echo "              ............                "
+        echo "           ..................             Welcome aboard, $(whoami)!"
+        echo "         ......................           "
+        echo "        ........................          "
+        echo "      ....... | .. | .. | ........        OS: $DESCRIPTION"
+        echo "     ....... )_)  )_)  )_) ........       Default Shell: $MYSHELL"
+        echo "     ...... )___))___))___)\ ......       Uptime: $UPTIME"
+        echo "     ..... )____)____)_____)\ .....       RAM: $MEMUSED MiB / $MEMTOTAL MiB"
+        echo "      .. _____|____|____|____\__ .        "
+        echo " --------\  o - o - o - o    /---------   Wherever we want to go, we will go."
+        echo " ^^^^ ^^^^^^^^^^^^^^^^^^^^^^^           "
+        echo "  ^^^^      ^^^^     ^^^    ^^          "
+        echo "       ^^^^      ^^^                    "
+        echo ""
+        sleep 0.18
     done
 else
     # Error message
