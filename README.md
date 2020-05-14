@@ -1,7 +1,7 @@
-# Boatfetch
+# piratefetch
 
 ## Proposito
-Boatfetch, al más puro estilo de Linux, busca mostrar amigablemente información del sistema por medio de la terminal, tal como lo hacen Screenfetch o Neofetch, pero con un enfoque minimalista.
+Piratefetch, al más puro estilo de Linux, busca mostrar amigablemente información del sistema por medio de la terminal, tal como lo hacen Screenfetch o Neofetch, pero con un enfoque minimalista.
 
 ## Funciones
 Mostrar datos del Sistema Operativo, tales como:
@@ -15,7 +15,7 @@ Además tiene una linda animación ASCII de un barco navegando, vamos ¿Quién n
 ## Ejecutar sin Instalación
 Si solo quieres probar el script debes ejecutar el siguiente comando:
 ```
-sh boatfetch.sh
+sh piratefetch.sh
 ```
 
 ## Instalación
@@ -23,7 +23,7 @@ Es un script, más sencillo no puede ser.
 
 Copiamos el script a nuestra carpeta HOME
 ```
-cp boatfetch.sh $HOME
+cp piratefetch.sh $HOME
 ```
 
 E iremos a nuestra HOME
@@ -41,7 +41,7 @@ Nota: si eres del team ZSH el archivo será .zshrc
 
 Una vez dentro, al final del archivo pegaremos el siguiente comando:
 ```
-sh boatfetch.sh
+sh piratefetch.sh
 ```
 
-Guardamos, salimos y listo ;) la próxima vez que abras la terminal verás el lindo bote.
+Guardamos, salimos y listo ;) la próxima vez que abras la terminal verás el lindo barco.
