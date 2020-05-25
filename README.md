@@ -7,7 +7,7 @@ Piratefetch, al más puro estilo de Linux, busca mostrar amigablemente informaci
 
 ## Funciones
 Mostrar datos del Sistema Operativo, tales como:
-* SO
+* OS
 * Default Shell
 * Uptime
 * Ram Used/Total
