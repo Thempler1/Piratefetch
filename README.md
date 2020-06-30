@@ -26,7 +26,7 @@ Es un script, más sencillo no puede ser.
 Copiamos el script a /usr/bin y le damos permisos
 ```
 sudo cp piratefetch.sh /usr/bin
-sudo chmod o+x /usr/bin/hello.sh
+sudo chmod o+x /usr/bin/piratefetch.sh
 ```
 
 Aquí es donde debes saber que shell estas utilizando, en Ubuntu la shell por defecto es bash (aunque si estás utilizando zsh el proceso es similar)
