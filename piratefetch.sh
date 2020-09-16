@@ -4,7 +4,7 @@ clear
 
 # Settings
 #ANIMATION=0: NO ANIMATION, ANIMATION=1: BOAT ANIMATION
-ANIMATION=1
+ANIMATION=0
 
 # Variables
 MYSHELL=$($SHELL --version | cut -d '(' -f 1)
@@ -18,20 +18,24 @@ MEMUSED=`free -m  | grep Mem | awk '{print $3}'`
 # Output
 if [ $ANIMATION -eq 0 ]
 then
-    echo ""
-    echo "              ............                "
-    echo "           ..................             Welcome aboard, $(whoami)!"
-    echo "         ......................           "
-    echo "        ........................          "
-    echo "      ....... | .. | .. | ........        OS: $DESCRIPTION"
-    echo "     ....... )_)  )_)  )_) ........       Default Shell: $MYSHELL"
-    echo "     ...... )___))___))_X_)\ ......       Uptime: $UPTIME"
-    echo "     ..... )____)____)_____)\ .....       RAM: $MEMUSED MiB / $MEMTOTAL MiB"
-    echo "      .. _____|____|____|____\__ .        "
-    echo "---------\  o - o - o - o    /---------   Wherever we want to go, we will go."
-    echo "  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^             "
-    echo "    ^^^^      ^^^^     ^^^    ^^          "
-    echo "         ^^^^      ^^^                    "
+
+    echo "                                            "
+    echo "                                            "
+    echo "                      (&@@@@@&@@@@@@@#      "
+    echo "                        @@@@@     @@@@@     Welcome aboard, $(whoami)!"
+    echo "                        @@@@@     &@@@@.    "
+    echo "                        @@@@@    /@@@@%     "
+    echo "   .%       .%          @@@@@@@@@@@@*       Welcome aboard, $(whoami)!"
+    echo " %.        %.           @@@@@               Default Shell: $MYSHELL"
+    echo "       .%               @@@@@               Uptime: $UPTIME"
+    echo "     %.      %.      (@@@@@@@@@@)           RAM: $MEMUSED MiB / $MEMTOTAL MiB"
+    echo "  .%      .%                                "
+    echo "%.      %.                                  Wherever we want to go, we will go."
+    echo "     .%      .%       .%       .%           "
+    echo "   %.      %.       %.       %.       %.    "
+    echo ".%      .%       .%       .%       .%       "
+    echo "      %.       %.       %.       %.         "
+
 elif [ $ANIMATION -eq 1 ]
 then
     for i in 1 2 3
